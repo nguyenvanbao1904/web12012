@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+}
+
+.container{
+    border: 1px solid blue;
+    padding: 10px;
+    margin: auto;
+}
+
+table{
+    border: 1px solid black;
+    margin: 20px 0;
+}
+
+table tr td{
+    border: 1px solid gray;
+}
+
+input{
+    width: 80%;
+}
+
+#submit{
+    margin-bottom: 20px;
+}
