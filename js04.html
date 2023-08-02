@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./CSS/js04.css" />
+    </head>
+    <body>
+        <form onsubmit="return false">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2"><h2>các phép tính số học</h2></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><label for="num1">Số thứ 1</label></td>
+                        <td><input type="text" id="num1" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="num2">Số thứ 2</label></td>
+                        <td><input type="text" id="num2" /></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="first">Chọn phép toán</label>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    <input
+                                        type="radio"
+                                        id="first"
+                                        value="+"
+                                        name="option"
+                                    />Cộng
+                                </li>
+                                <li>
+                                    <input
+                                        type="radio"
+                                        value="-"
+                                        name="option"
+                                    />Trừ
+                                </li>
+                                <li>
+                                    <input
+                                        type="radio"
+                                        value="*"
+                                        name="option"
+                                    />Nhân
+                                </li>
+                                <li>
+                                    <input
+                                        type="radio"
+                                        value="/"
+                                        name="option"
+                                    />Chia
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>
+                            <input
+                                type="submit"
+                                id="submit"
+                                value="Thực hiện"
+                            />
+                        </td>
+                        <td>
+                            <input type="rs" name="rs" id="rs" readonly />
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </form>
+        <script src="./JS/js04.js"></script>
+    </body>
+</html>
