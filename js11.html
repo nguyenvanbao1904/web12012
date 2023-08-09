@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #rs{
+            margin-top: 30px;
+            border: 1px solid black;
+            height: 500px;
+            width: 500px;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+        }
+        #rs img{
+            width: 50%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>Image Resizing</h2>
+    <hr>
+    <span>Scale: </span>
+   <form id="form">
+    <input type="radio" name="size" value="10">10%
+    <input type="radio" name="size" value="25">25%
+    <input type="radio" name="size" checked value="50">50%
+    <input type="radio" name="size" value="100">100%
+   </form>
+    <div id="rs">
+        <img src="./Images/javascript.jpg" alt="">
+    </div>
+    <script src="./JS/js11.js"></script>
+</body>
+</html>

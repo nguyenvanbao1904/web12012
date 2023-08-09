@@ -19,15 +19,43 @@ const createArr = () => {
 const sortUp = () => {
     let tmpArr = stringRs.split("    ");
 
-    for (let i = 0; i < tmpArr - 1; i++) {
-        for (let j = 0; j < n - 1; j++) {
-            if (tmpArr[j] > tmpArr[j + 1]) {
-                // Swap arr[j] and arr[j+1]
-                let temp = tmpArr[j];
-                tmpArr[j] = tmpArr[j + 1];
-                tmpArr[j + 1] = tmpArr;
-            }
+    for(let i = 0; i< tmpArr.length; i++){
+        tmpArr[i] = Number(tmpArr[i]);
+    }
+
+    for(let i = 0; i < tmpArr.length-1; i++){
+        for(let j = i + 1; j < tmpArr.length; j++){
+           if(tmpArr[i] > tmpArr[j]){
+                let tmp = tmpArr[i];
+                tmpArr[i] = tmpArr[j];
+                tmpArr[j] = tmp;
+           }
         }
     }
-    console.log(tmpArr);
+
+    let Arr = document.createElement("p");
+    Arr.innerText = `Mảng tăng dần: ${tmpArr}`;
+    rs.appendChild(Arr);
+};
+
+const sortDow = () => {
+    let tmpArr = stringRs.split("    ");
+
+    for(let i = 0; i< tmpArr.length; i++){
+        tmpArr[i] = Number(tmpArr[i]);
+    }
+
+    for(let i = 0; i < tmpArr.length-1; i++){
+        for(let j = i + 1; j < tmpArr.length; j++){
+           if(tmpArr[i] < tmpArr[j]){
+                let tmp = tmpArr[i];
+                tmpArr[i] = tmpArr[j];
+                tmpArr[j] = tmp;
+           }
+        }
+    }
+
+    let Arr = document.createElement("p");
+    Arr.innerText = `Mảng Giảm dần: ${tmpArr}`;
+    rs.appendChild(Arr);
 };
